@@ -1,0 +1,133 @@
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.headWebPage{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.headWebPage-Item {
+    margin-left: 5mm ;
+    font-size: small;
+}
+
+a:link, a:visited, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* GOOGLE SECTION */
+
+.Google {
+    /* background-color: lightgray;
+    border: 1px dotted grey; */
+    margin-top: 75px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+/* 01. Google Image */
+.Google .Image { 
+    /* background-color: lightgray;
+    border: 1px dotted grey; */
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+/* 02. Google Search Bar */
+.Google .SearchBar {
+    margin-top: 10px;
+    height: 40px;
+    width: 585px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dfe1e5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.Google .SearchBar:hover{
+    box-shadow: 0 0 5px lightgray;
+}
+
+
+/* 03. Search Icon */
+.Google .fa-magnifying-glass {
+    color: #9aa0a6 ;
+    padding-left: 15px;
+}
+
+
+/* 04. Input Search Bar */
+.Google .SearchBar .GoogleInput {
+    width: 75%;
+    margin-left: 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: text;
+}
+
+.bntDeleteGoogleInput {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.GoogleInput:not(:placeholder-shown) + .bntDeleteGoogleInput {
+    display: block;
+
+}
+
+
+
+
+
+
+.GoogleButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.GoogleButtons button {
+
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+    border-width: 1px ;
+    border-style: solid;
+    border-color: #f8f9fa;
+    border-radius: 4px;
+
+    background-color: #f8f9fa;
+
+}
+
+.GoogleButtons button:hover{
+    box-shadow: 0 0 2px gray;
+}

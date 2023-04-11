@@ -17,7 +17,7 @@ body {
 }
 
 a:link, a:visited, a:active {
-    color: black;
+    color: #000000DE;
     text-decoration: none;
 }
 
@@ -48,18 +48,38 @@ a:hover {
     justify-content: center; */
 }
 
+.Image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Image img {
+    margin-bottom: 10px;
+}
+
+.Image .GoogleImages-Txt {
+    color: #4487f6;
+    font-size: 16px;
+    /* font-weight: bold; */
+    display: flex;
+    margin-top: -30px;
+    margin-right: -215px;
+}
+
 
 /* 02. Google Search Bar */
 .Google .SearchBar {
     margin-top: 10px;
     height: 40px;
     width: 585px;
-    border-width: 1px;
+    border-width: 0.5px;
     border-style: solid;
     border-color: #dfe1e5;
     border-radius: 20px;
     display: flex;
     align-items: center;
+    margin: 20px;
 }
 .Google .SearchBar:hover{
     box-shadow: 0 0 5px lightgray;
@@ -104,9 +124,7 @@ a:hover {
     display: flex;
     justify-content: center;
 }
-
-.GoogleButtons button {
-
+.GoogleButtons input {
     color: #3c4043;
     font-family: arial,sans-serif;
     font-size: 14px;
@@ -118,16 +136,53 @@ a:hover {
     text-align: center;
     cursor: pointer;
     user-select: none;
-
     border-width: 1px ;
     border-style: solid;
     border-color: #f8f9fa;
     border-radius: 4px;
-
     background-color: #f8f9fa;
-
+}
+.GoogleButtons input:hover{
+    box-shadow: 0 0 1px gray;
 }
 
-.GoogleButtons button:hover{
-    box-shadow: 0 0 2px gray;
+
+
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+    font-size: 15px;
+    color: #70757a;
 }
+
+.footer-list-1{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-list-2{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-Item {
+    margin-left: 5mm ;
+    font-size: small;
+}
+
+.footer-Item a:link, .footer-Item a:visited, .footer-Item a:active {
+    color: #70757a;
+    text-decoration: none;
+}
+
+.footer-Item.a:hover {
+    text-decoration: underline;
+}
+
+
+
